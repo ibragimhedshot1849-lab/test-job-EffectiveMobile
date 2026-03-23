@@ -26,19 +26,10 @@ Nginx transmits the received response to the user
 
 ## Technologies Used
 
-[ Browser ]
-     |
-     v
-[ Nginx ]
-     |
-     v
-[ Backend ]
-     |
-     v
-[ Response ]
-     |
-     v
-[ Browser ]
+- Docker
+- Docker Compose
+- Nginx
+- Python
 
 # Instruction
 
