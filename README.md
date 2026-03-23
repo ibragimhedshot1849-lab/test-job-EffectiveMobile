@@ -31,3 +31,10 @@ Hello from Effective Mobile!
 
 6. You can check it in the terminal:
 curl http://localhost:8080
+
+# Short description
+
+Пользователь отправляет GET-запрос в Nginx. 
+Nginx в свою очередь выступает как reserve-proxy и отправляет в backend, который находится внутри docker-сети
+backend обрабатывает запрос и возвращает его Nginx. 
+Nginx передает полученный ответ пользователю
