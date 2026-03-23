@@ -9,7 +9,7 @@ services:
     container_name: backend
     expose:
       - "${BACKEND_PORT}" #Открываем порт внутри сети Docker, чтобы nginx мог обращаться к backend. Не используем порты, так как не нужно открывать порт на хост-машине
-    healthcheck:          #Проверка работоспособности контейнера
+  healthcheck:            #Проверка работоспособности контейнера
     test: ["CMD", "wget", "--spider", "-q", "http://localhost:${BACKEND_PORT}"] #используем wget для проверки доступности приложения внутри контейнера так как на python 3.11 по умолчанию не установлен curl
     interval: 10s
     timeout: 5s
