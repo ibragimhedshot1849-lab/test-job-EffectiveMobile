@@ -26,19 +26,20 @@ Nginx transmits the received response to the user
 
 ## Technologies Used
 
-Client (Browser)
-       |
-       v
-   Nginx (reverse proxy)
-       |
-       v
-     Backend
-       |
-       v
-   Response
-       |
-       v
-Client
+[ Browser ]
+     |
+     v
+[ Nginx ]
+     |
+     v
+[ Backend ]
+     |
+     v
+[ Response ]
+     |
+     v
+[ Browser ]
+
 # Instruction
 
 1. First you need to clone the project: 
