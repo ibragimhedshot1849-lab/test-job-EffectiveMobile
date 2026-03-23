@@ -8,6 +8,11 @@ services:
     networks:
       - app-network
     build: ./backend
+    deploy:       #ограничение ресурсов для контейнера, чтобы он не потреблял слишком много ресурсов хост-машины
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
     container_name: backend
     expose:
       - "${BACKEND_PORT}" #Открываем порт внутри сети Docker, чтобы nginx мог обращаться к backend. Не используем порты, так как не нужно открывать порт на хост-машине
