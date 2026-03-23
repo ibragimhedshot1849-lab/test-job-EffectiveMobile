@@ -24,6 +24,13 @@ Nginx, in turn, acts as a reverse proxy and sends it to the backend, which is lo
 The backend processes the request and returns it to Nginx. 
 Nginx transmits the received response to the user
 
+## Technologies Used
+
+- Docker
+- Docker Compose
+- Nginx
+- Python
+
 # Instruction
 
 1. First you need to clone the project: 
