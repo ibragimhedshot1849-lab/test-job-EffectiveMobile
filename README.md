@@ -77,7 +77,7 @@ Nginx передает полученный ответ пользователю
 git clone https://github.com/ibragimhedshot1849-lab/test-job-EffectiveMobile.git
 
 2. перейдите в репозиторий:
-cd project
+cd test-job-EffectiveMobile
 
 3. В терминале нужно написать:
 docker compose up --build
