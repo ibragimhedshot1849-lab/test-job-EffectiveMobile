@@ -37,7 +37,7 @@ Nginx transmits the received response to the user
 git clone https://github.com/ibragimhedshot1849-lab/test-job-EffectiveMobile.git
 
 2. go to the repository:
-cd project
+cd test-job-EffectiveMobile
 
 3. In the terminal need write:
 docker compose up --build
