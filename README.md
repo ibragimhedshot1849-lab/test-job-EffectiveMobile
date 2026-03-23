@@ -13,7 +13,16 @@ English and Russia 🇷🇺
 
 Make sure Docker is running before starting the project
 
-## Quick Start
+## Environment Variables
+
+Before running the project, create a `.env` file in the root directory. And write this:
+
+NGINX_PORT=8080
+BACKEND_PORT=8080
+
+These variables are required for Docker Compose to work correctly.
+
+## Quick Start  
 
 docker compose up --build
 
@@ -59,6 +68,15 @@ curl http://localhost:8080
 - Docker Compose
 
 Перед запуском проекта убедитесь, что Docker запущен
+
+## Переменные среды
+
+Перед запуском проекта создайте файл `.env` в корневом каталоге. И запишите это:
+
+NGINX_PORT=8080
+BACKEND_PORT=8080
+
+Эти переменные необходимы для корректной работы Docker Compose.
 
 ## Быстрый запуск
 
