@@ -26,11 +26,19 @@ Nginx transmits the received response to the user
 
 ## Technologies Used
 
-- Docker
-- Docker Compose
-- Nginx
-- Python
-
+Client (Browser)
+       |
+       v
+   Nginx (reverse proxy)
+       |
+       v
+     Backend
+       |
+       v
+   Response
+       |
+       v
+Client
 # Instruction
 
 1. First you need to clone the project: 
@@ -67,7 +75,7 @@ docker compose up --build
 # Краткое описание
 
 Пользователь отправляет запрос GET в Nginx. 
-Nginx, в свою очередь, действует как обратный прокси-сервер и отправляет его серверной части, которая находится внутри сети docker.
+Nginx, в свою очередь, действует как обратный прокси-сервер и отправляет его серверной части backend, которая находится внутри сети docker.
 Серверная часть обрабатывает запрос и возвращает его Nginx. 
 Nginx передает полученный ответ пользователю
 
